@@ -1,0 +1,34 @@
+html, body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.container div{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 4px solid black;
+}
+
+#cercle1 { 
+    border-color: red;
+    transform: translate(195px, -60px);
+}
+#cercle2 { 
+    border-color: blue;
+    transform: translate(-65px, -60px);
+}
+#cercle3 { 
+    border-color: green;
+    transform: translate(130px, 0px);
+}
+#cercle4 { 
+    border-color: yellow;
+}
+#cercle5 { 
+    transform: translate(65px, -60px);
+    border-color: black;
+}
