@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic content display</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <h1 id="title"></h1>
+        <p class="topic" id="topic"></p>
+        <div class="file-loader">
+            <label for="jsonFile">Load voting data:</label>
+            <input type="file" id="jsonFile">
+        </div>
+        <table class="results">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Votes</th>
+                    <th>Percentage</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="proRow">
+                    <td>Pro</td>
+                    <td id="proVotes">0</td>
+                    <td id="proPercentage">0%</td>
+                </tr>
+                <tr id="conRow">
+                    <td>Con</td>
+                    <td id="conVotes">0</td>
+                    <td id="conPercentage">0%</td>
+                </tr>
+                <tr id="absRow">
+                    <td>Abs</td>
+                    <td id="absVotes">0</td>
+                    <td id="absPercentage">0%</td>
+                </tr>
+                <tr class="total-row">
+                    <td>Total</td>
+                    <td id="totalVotes">0</td>
+                    <td>100%</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
