@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    padding: 40px;
+    font-family: Arial, sans-serif;
+    background: white;
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #006bb6;
+    margin-bottom: 30px;
+}
+
+/* Table */
+#dataTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#dataTable th {
+    padding: 6px;
+    background: #222;
+}
+
+#dataTable th input {
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border-radius: 2px;
+    font-size: 12px;
+}
+
+#dataTable td {
+    padding: 5px;
+    background: #f4f4f4;
+    border-bottom: 3px solid white;
+}
+
+#dataTable td input {
+    width: 100%;
+    padding: 7px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+}
+
+
+/* Delete button */
+.delete-btn {
+    padding: 8px 14px;
+    border: none;
+    background: #e7354f;
+    color: white;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background: #c9223b;
+}
+
+/* Actions */
+.actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+    margin-top: 15px;
+}
+
+.actions button {
+    padding: 8px 12px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+#addRow {
+    background: #777;
+}
+#addRow:hover {
+    background: #555;
+}
+#save {
+    background: #087ff5;
+}
+#save:hover {
+    background: #0068d6;
+}
