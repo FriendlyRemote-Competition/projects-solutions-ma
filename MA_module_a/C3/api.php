@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] === "GET") {
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $data = file_get_contents("php://input");
     // Debug :
-    file_put_contents("debug.txt", $data);
+    // file_put_contents("debug.txt", $data);
     file_put_contents($file, $data);
     header("Content-Type: application/json");
     echo json_encode([
