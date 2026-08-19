@@ -1,6 +1,7 @@
 import React, { useContext, useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { AppContext } from '../context/AppContext';
+
 const assetImages = import.meta.glob('../assets/images/*', { eager: true });
 
 // here i get all the correct urls for the images in the assets/images folder, and then i can use them in the component.
@@ -43,6 +44,8 @@ const Chapter = () => {
     const isBookmarked = bookmarks.some(b => b.sectionId === section.id);
     const ImageUrl = getImageUrl(section.image);
 
+    const progress = ((currentSectionIndex + 1) / chapter.sections.length) * 100;
+
     return (
         <div className="row g-4">
             {/* Sidebar Navigation */}
@@ -67,16 +70,51 @@ const Chapter = () => {
             {/* Reader Content */}
             <div className="col-md-9">
                 <div className="custom-card p-4">
-                    <div className="d-flex justify-content-between align-items-center mb-4 pb-2 border-bottom border-secondary">
-                        <span className="text-muted-custom">
-                            Chapter {chapter.number} — Section {currentSectionIndex + 1} of {chapter.sections.length}
-                        </span>
-                        <button
-                            className={`btn btn-sm ${isBookmarked ? 'btn-warning' : 'btn-custom'}`}
-                            onClick={() => toggleBookmark(chapter.id, section.id, section.heading, section.content)}
+                    <div className="mb-4 pb-3 border-bottom border-secondary">
+                        <div className="d-flex justify-content-between align-items-center mb-3">
+                            <span className="text-muted-custom">
+                                Chapter {chapter.number} — Section {currentSectionIndex + 1} of {chapter.sections.length}
+                            </span>
+
+                            <button
+                                className={`btn btn-sm ${isBookmarked ? 'btn-warning' : 'btn-custom'}`}
+                                onClick={() => toggleBookmark(chapter.id, section.id, section.heading, section.content)}
+                            >
+                                {isBookmarked ? '★ Bookmarked' : '☆ Bookmark'}
+                            </button>
+                        </div>
+
+                        <div className="d-flex justify-content-between align-items-center mb-1">
+                            <small className="text-muted-custom">
+                                Chapter Progress
+                            </small>
+                            <small className="text-neon-turquoise fw-bold">
+                                {Math.round(progress)}%
+                            </small>
+                        </div>
+
+                        <div
+                            className="progress"
+                            style={{
+                                height: '8px',
+                                backgroundColor: '#94a3b833',
+                                borderRadius: '10px',
+                                overflow: 'hidden'
+                            }}
                         >
-                            {isBookmarked ? '★ Bookmarked' : '☆ Bookmark'}
-                        </button>
+                            <div
+                                className="progress-bar"
+                                role="progressbar"
+                                style={{
+                                    width: `${progress}%`,
+                                    transition: 'width 0.3s ease',
+                                    backgroundColor: '#7c3aed'
+                                }}
+                                aria-valuenow={progress}
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                            />
+                        </div>
                     </div>
 
                     <h2 className="mb-4 text-neon-violet">{section.heading}</h2>
