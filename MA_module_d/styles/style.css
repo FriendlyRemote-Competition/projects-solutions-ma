@@ -1,0 +1,421 @@
+/* Here i declare the fomt i will use */
+@font-face {
+    font-family: 'Cormorant Garamond';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url('../media_files/fonts/CormorantGaramond-SemiBold.woff2') format('woff2');
+}
+
+:root {
+    --ink: #151719;
+    --river: #23343B;
+    --porcelain: #F4F0E8;
+    --brick: #8A4F3D;
+    --brass: #B28A52;
+    --mist: #D8DDDA;
+    --white: #FFFFFF;
+
+    --font-serif: 'Cormorant Garamond', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+body {
+    background-color: var(--porcelain);
+    color: var(--ink);
+    font-family: var(--font-sans);
+    font-weight: 400;
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+/* Typography Utilities */
+.font-serif {
+    font-family: var(--font-serif);
+}
+
+.font-sans {
+    font-family: var(--font-sans);
+}
+
+.eyebrow {
+    font-size: 0.72rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: rgba(21, 23, 25, 0.65);
+    margin-bottom: 0.85rem;
+    display: block;
+}
+
+.eyebrow-light {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+h1, h2, h3, h4, .display-heading {
+    font-family: var(--font-serif);
+    font-weight: 400;
+    letter-spacing: -0.01em;
+}
+
+/* Color Helpers */
+.bg-porcelain {
+    background-color: var(--porcelain);
+}
+
+.bg-ink {
+    background-color: var(--ink);
+}
+
+.bg-river {
+    background-color: var(--river);
+}
+
+.text-brick {
+    color: var(--brick);
+}
+
+.text-brass {
+    color: var(--brass);
+}
+
+/* Custom Buttons */
+.btn-brass {
+    background-color: var(--brass);
+    color: var(--white);
+    border: none;
+    border-radius: 0;
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 0.85rem 1.75rem;
+    transition: all 0.3s ease;
+}
+
+.btn-brass:hover {
+    background-color: #9c7643;
+    color: var(--white);
+}
+
+.btn-ink {
+    background-color: var(--ink);
+    color: var(--white);
+    border: none;
+    border-radius: 0;
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 0.85rem 1.75rem;
+    transition: all 0.3s ease;
+}
+
+.btn-ink:hover {
+    background-color: var(--river);
+    color: var(--white);
+}
+
+.btn-link-custom {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: opacity 0.3s ease;
+}
+
+.btn-link-custom:hover {
+    color: var(--brass);
+}
+
+/* Image Placeholder Container */
+.img-placeholder {
+    background-color: var(--mist);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Header Navigation */
+.navbar-main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    padding: 1.5rem 2rem;
+    background: linear-gradient(180deg, rgba(21, 23, 25, 0.6) 0%, rgba(21, 23, 25, 0) 100%);
+}
+
+.navbar-brand-title {
+    font-family: var(--font-serif);
+    font-size: 1.4rem;
+    letter-spacing: 0.12em;
+    color: var(--white);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.logo-light-svg {
+    height: 28px !important;
+}
+
+.nav-link-item {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 0.75rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.nav-link-item:hover {
+    color: var(--brass);
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    min-height: 90vh;
+    background-color: var(--ink);
+    color: var(--white);
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 5rem;
+    padding-top: 10rem;
+}
+
+.hero-bg-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(21, 23, 25, 0.4) 0%, rgba(21, 23, 25, 0.75) 100%);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-title {
+    font-size: clamp(2.8rem, 6vw, 4.8rem);
+    line-height: 1.05;
+    max-width: 750px;
+    margin-bottom: 1.5rem;
+}
+
+/* Story / Overview Section */
+.stats-number {
+    font-family: var(--font-serif);
+    font-size: 2.8rem;
+    color: var(--brick);
+    line-height: 1;
+}
+
+.stats-label {
+    font-size: 0.68rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--ink);
+    opacity: 0.8;
+    margin-top: 0.3rem;
+}
+
+/* Rooms Section */
+.room-card {
+    background: var(--white);
+    border: 1px solid var(--mist);
+}
+
+.room-spec-title {
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--ink);
+    opacity: 0.6;
+}
+
+.room-spec-val {
+    font-size: 0.88rem;
+    color: var(--ink);
+    font-weight: 500;
+}
+
+.room-tab-btn {
+    background: transparent;
+    border: 1px solid var(--mist);
+    padding: 0.8rem 1.2rem;
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    color: var(--ink);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.room-tab-btn.active,
+.room-tab-btn:hover {
+    background: var(--ink);
+    color: var(--white);
+    border-color: var(--ink);
+}
+
+/* Dining Section */
+.dining-card {
+    position: relative;
+    overflow: hidden;
+    min-height: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 2.5rem;
+    color: var(--white);
+}
+
+.dining-card-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(21, 23, 25, 0.1) 0%, rgba(21, 23, 25, 0.85) 100%);
+    z-index: 1;
+}
+
+.dining-card-content {
+    position: relative;
+    z-index: 2;
+}
+
+/* Wellness Icons Section */
+.wellness-card {
+    border-right: 1px solid var(--mist);
+    padding: 2rem;
+    height: 100%;
+}
+
+.wellness-card:last-child {
+    border-right: none;
+}
+
+/* Map & Nearby */
+.map-container {
+    background-color: var(--mist);
+    position: relative;
+    min-height: 380px;
+    height: 100%;
+    border: 1px solid var(--mist);
+    overflow: hidden;
+}
+
+.map-pin {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background: var(--brass);
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.nearby-item {
+    background: var(--white);
+    border: 1px solid var(--mist);
+    padding: 1.25rem;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.nearby-item:hover {
+    transform: translateX(4px);
+}
+
+/* Offcanvas */
+.offcanvas-booking {
+    width: 480px !important;
+    background-color: var(--porcelain);
+    color: var(--ink);
+    border-left: 1px solid var(--mist);
+}
+
+.form-control-custom,
+.form-select-custom {
+    background-color: var(--white);
+    border: 1px solid var(--mist);
+    border-radius: 0;
+    padding: 0.75rem 1rem;
+    font-size: 0.88rem;
+    color: var(--ink);
+}
+
+.form-control-custom:focus,
+.form-select-custom:focus {
+    border-color: var(--river);
+    box-shadow: none;
+    background-color: var(--white);
+}
+
+.form-label-custom {
+    font-size: 0.68rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 0.4rem;
+}
+
+/* Mobile Menu */
+.offcanvas-mobile-menu {
+    background-color: var(--porcelain);
+    width: 100% !important;
+}
+
+.mobile-nav-link {
+    font-family: var(--font-serif);
+    font-size: 2.5rem;
+    color: var(--ink);
+    text-decoration: none;
+    display: block;
+    margin-bottom: 1.5rem;
+}
+
+/* Footer */
+footer {
+    background-color: var(--river);
+    color: var(--white);
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    color: var(--white);
+    border-radius: 0;
+    padding-left: 0;
+}
+
+.footer-input:focus {
+    background: transparent;
+    border-color: var(--brass);
+    color: var(--white);
+    box-shadow: none;
+}
