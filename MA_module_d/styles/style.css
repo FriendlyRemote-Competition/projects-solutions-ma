@@ -419,3 +419,8 @@ footer {
     color: var(--white);
     box-shadow: none;
 }
+
+.highlighted {
+    background-color: var(--brass);
+    color: var(--brass);
+}

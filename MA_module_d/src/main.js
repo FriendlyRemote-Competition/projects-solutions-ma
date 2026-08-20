@@ -60,3 +60,33 @@ function switchRoom(index) {
         else btn.classList.remove('active');
     });
 }
+
+
+const mapmark1 = document.getElementById('mapmark1');
+const mapmark2 = document.getElementById('mapmark2');
+const mapmark3 = document.getElementById('mapmark3');
+
+const nearbyItem1 = document.getElementById('nearby-item-1');
+const nearbyItem2 = document.getElementById('nearby-item-2');
+const nearbyItem3 = document.getElementById('nearby-item-3');
+
+mapmark1.addEventListener('mouseover', () => {
+    nearbyItem1.classList.add('highlighted');
+});
+mapmark1.addEventListener('mouseout', () => {
+    nearbyItem1.classList.remove('highlighted');
+});
+
+mapmark2.addEventListener('mouseover', () => {
+    nearbyItem2.classList.add('highlighted');
+});
+mapmark2.addEventListener('mouseout', () => {
+    nearbyItem2.classList.remove('highlighted');
+});
+
+mapmark3.addEventListener('mouseover', () => {
+    nearbyItem3.classList.add('highlighted');
+});
+mapmark3.addEventListener('mouseout', () => {
+    nearbyItem3.classList.remove('highlighted');
+});
