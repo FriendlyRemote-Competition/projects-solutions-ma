@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Sù - Hotel Shanghai</title>
+    <link rel="icon" type="image/x-icon" href="./media_files/brand/favicon.svg">
+    <!-- Importing the bootstrap css -->
+    <link href="./styles/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <nav class="navbar-main d-flex align-items-center justify-content-between">
+        <a href="#" class="navbar-brand-title">
+            <img src="./media_files/brand/su-hotel-logo-light.svg" alt="Sù Hotel Logo" style="height: 36px;">
+        </a>
+        <div class="d-none d-lg-flex align-items-center gap-4">
+            <a href="#hotel" class="nav-link-item">Hotel</a>
+            <a href="#rooms" class="nav-link-item">Rooms</a>
+            <a href="#dining" class="nav-link-item">Dining</a>
+            <a href="#wellness" class="nav-link-item">Wellness</a>
+            <a href="#shanghai" class="nav-link-item">Shanghai</a>
+        </div>
+        <!-- Actions -->
+        <div class="d-flex align-items-center gap-3">
+            <span class="d-none d-md-inline text-white me-2" style="font-size:0.75rem; letter-spacing:0.1em;">EN</span>
+            <button class="btn btn-brass d-none d-md-block" data-bs-toggle="offcanvas" data-bs-target="#bookingDrawer">
+                Book Your Stay
+            </button>
+            <button class="btn text-white d-lg-none fs-3 p-0" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu"
+                aria-label="Open navigation menu" aria-controls="mobileMenu">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" style="width: 2rem; height: auto;">
+                    <path d="M5 10h22M5 16h22M5 22h22" fill="none" stroke="currentColor" stroke-width="1.8" />
+                </svg>
+            </button>
+        </div>
+    </nav>
+    <main>
+        <section class="hero-section img-placeholder"
+            style="background-image: url('./media_files/images/hero-shanghai-hotel.webp');">
+            <div class="hero-bg-overlay"></div>
+            <div class="container hero-content">
+                <div class="row">
+                    <div class="col-lg-9">
+                        <span class="eyebrow eyebrow-light">A quiet address in a city of movement</span>
+                        <h1 class="hero-title">Stay close to the soul of Shanghai</h1>
+                        <p class="lead text-white-50 mb-4 fs-6 max-w-500" style="max-width: 480px;">
+                            River light, Art Deco restraint and intuitive hospitality meet beside Suzhou Creek.
+                        </p>
+                        <div class="d-flex flex-wrap align-items-center gap-4">
+                            <button class="btn btn-brass" data-bs-toggle="offcanvas"
+                                data-bs-target="#bookingDrawer">Book
+                                Your Stay</button>
+                            <a href="#hotel" class="btn-link-custom">Discover the Hotel
+                                <img src="./media_files/icons/icon-arrow.svg" fill="white" alt="Arrow"
+                                    style="width: 0.8rem; height: auto; margin-left: 0.3rem;"> <!-- color problem -->
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="position-absolute bottom-0 end-0 p-4 d-none d-md-block text-white-50"
+                    style="font-size: 0.65rem; letter-spacing: 0.2em;">
+                    SCROLL <span class="ms-2">―</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="hotel" class="py-5 my-lg-5">
+            <div class="container py-4">
+                <div class="row g-5 align-items-center">
+                    <!-- Story Image -->
+                    <div class="col-lg-5">
+                        <div class="img-placeholder"
+                            style="height: 520px; background-image: url('./media_files/images/story-lobby.webp');">
+                        </div>
+                    </div>
+                    <div class="col-lg-7 ps-lg-5">
+                        <span class="eyebrow">Between water and city</span>
+                        <h2 class="display-heading fs-1 mb-4">A Shanghai stay with room to breathe</h2>
+                        <p class="text-secondary mb-5" style="max-width: 540px;">
+                            Set beside Suzhou Creek, The Sù brings together the composure of a private residence and the
+                            instinctive care of a great city hotel. Art Deco lines, warm materials and river light shape
+                            every space.
+                        </p>
+                        <div class="row border-top pt-4 g-4" style="border-color: var(--mist) !important;">
+                            <div class="col-4">
+                                <div class="stats-number">48</div>
+                                <div class="stats-label">Rooms</div>
+                            </div>
+                            <div class="col-4">
+                                <div class="stats-number">2</div>
+                                <div class="stats-label">Restaurants</div>
+                            </div>
+                            <div class="col-4">
+                                <div class="stats-number">24<span class="fs-4">-hour</span></div>
+                                <div class="stats-label">Hosts</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ROOMS & SUITES SECTION -->
+        <section id="rooms" class="py-5 bg-porcelain">
+            <div class="container">
+                <div
+                    class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-end mb-4">
+                    <div>
+                        <span class="eyebrow">Rooms & Suites</span>
+                        <h2 class="display-heading fs-1">A private view of Shanghai</h2>
+                    </div>
+                    <p class="text-secondary fs-7 mb-0 max-w-400" style="max-width: 320px;">
+                        Four considered spaces, each composed for rest, conversation and the changing river light.
+                    </p>
+                </div>
+                <!-- Featured Room Card -->
+                <div class="room-card mb-4">
+                    <div class="row g-0">
+                        <div class="col-lg-7">
+                            <div class="img-placeholder h-100"
+                                style="min-height: 420px; background-image: url('./media_files/images/room-deluxe-river.webp');"
+                                id="roomMainImage">
+                            </div>
+                        </div>
+                        <div class="col-lg-5 p-4 p-md-5 d-flex flex-column justify-content-between">
+                            <div>
+                                <div class="text-secondary fs-7 mb-2" id="roomNumber">01 / 04</div>
+                                <h3 class="display-heading fs-2 mb-3" id="roomTitle">Deluxe River Room</h3>
+                                <p class="text-secondary fs-6 mb-4" id="roomDesc">
+                                    A calm river-facing room shaped by warm timber, cream linen and morning light.
+                                </p>
+                                <!-- Specs Grid -->
+                                <div class="row g-3 py-3 border-top border-bottom mb-4"
+                                    style="border-color: var(--mist) !important;">
+                                    <div class="col-4">
+                                        <div class="room-spec-title">Space</div>
+                                        <div class="room-spec-val" id="roomSpace">42 m²</div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="room-spec-title">Guests</div>
+                                        <div class="room-spec-val" id="roomGuests">2</div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="room-spec-title">Bed</div>
+                                        <div class="room-spec-val" id="roomBed">1 king bed</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="fs-5 font-serif mb-3" id="roomPrice">From CNY 2,380 / night</div>
+                                <div class="d-flex flex-wrap align-items-center gap-3">
+                                    <a href="#" class="btn-link-custom text-dark">View Room Details</a>
+                                    <button class="btn btn-ink" data-bs-toggle="offcanvas"
+                                        data-bs-target="#bookingDrawer">Book This Room</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex align-items-center gap-2 overflow-x-auto pb-2">
+                    <button class="btn border-0 p-2 me-2" aria-label="Previous room"
+                        aria-controls="roomMainImage roomTitle roomDesc roomSpace roomGuests roomBed roomPrice">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"
+                            style="width: 1.2rem; height: auto; margin-left: 0.3rem;rotate:180deg;">
+                            <path d="M6 16h19M18 9l7 7-7 7" fill="none" stroke="black" stroke-width="1.8" />
+                        </svg>
+                    </button>
+                    <button class="room-tab-btn active" onclick="switchRoom(0)">Deluxe River Room</button>
+                    <button class="room-tab-btn" onclick="switchRoom(1)">Art Deco King Room</button>
+                    <button class="room-tab-btn" onclick="switchRoom(2)">Suzhou Suite</button>
+                    <button class="room-tab-btn" onclick="switchRoom(3)">Bund Signature Suite</button>
+                    <button class="btn border-0 p-2 ms-2" aria-label="Next room"
+                        aria-controls="roomMainImage roomTitle roomDesc roomSpace roomGuests roomBed roomPrice">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"
+                            style="width: 1.2rem; height: auto; margin-left: 0.3rem;">
+                            <path d="M6 16h19M18 9l7 7-7 7" fill="none" stroke="black" stroke-width="1.8" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section id="dining" class="py-5 bg-ink text-white">
+            <div class="container py-4">
+                <div
+                    class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-end mb-5">
+                    <div>
+                        <span class="eyebrow eyebrow-light">Dining</span>
+                        <h2 class="display-heading fs-1">Shanghai, served with clarity</h2>
+                    </div>
+                    <p class="text-white-50 fs-7 mb-0" style="max-width: 340px;">
+                        Season-led cooking downstairs. River-facing cocktails upstairs.
+                    </p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <div class="dining-card img-placeholder"
+                            style="background-image: url('./media_files/images/dining-su-kitchen.webp');">
+                            <div class="dining-card-overlay"></div>
+                            <div class="dining-card-content">
+                                <span class="eyebrow eyebrow-light">Modern Shanghai Table</span>
+                                <h3 class="display-heading fs-2 mb-2">SU Kitchen</h3>
+                                <p class="text-white-50 fs-6 mb-3">
+                                    Seasonal produce, familiar flavours and a clear contemporary point of view.
+                                </p>
+                                <div class="text-white-50 fs-7 mb-4">
+                                    Breakfast 06:30–10:30 · Dinner 17:30–22:00
+                                </div>
+                                <a href="#" class="btn-link-custom">View Sample Menu
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"
+                                        style="width: 1.2rem; height: auto; margin-left: 0.3rem;">
+                                        <path d="M6 16h19M18 9l7 7-7 7" fill="none" stroke="white" stroke-width="1.8" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="dining-card img-placeholder"
+                            style="background-image: url('./media_files/images/dining-river-bar.webp');">
+                            <div class="dining-card-overlay"></div>
+                            <div class="dining-card-content">
+                                <span class="eyebrow eyebrow-light">Drinks After Dusk</span>
+                                <h3 class="display-heading fs-2 mb-2">River Bar</h3>
+                                <p class="text-white-50 fs-6 mb-3">
+                                    Quiet cocktails, river reflections and a soundtrack that settles into the evening.
+                                </p>
+                                <div class="text-white-50 fs-7 mb-4">
+                                    Daily 16:00–01:00
+                                </div>
+                                <a href="#" class="btn-link-custom">View Sample Menu
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"
+                                        style="width: 1.2rem; height: auto; margin-left: 0.3rem;">
+                                        <path d="M6 16h19M18 9l7 7-7 7" fill="none" stroke="white" stroke-width="1.8" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="wellness" class="py-5 bg-porcelain">
+            <div class="container py-4">
+                <div class="img-placeholder mb-5"
+                    style="height: 380px; background-image: url('./media_files/images/wellness-pool.webp');">
+                    <div class="position-absolute inset-0 w-100 h-100" style="background: rgba(21, 23, 25, 0.4);"></div>
+                    <div class="position-relative z-2 text-white text-center p-4">
+                        <span class="eyebrow eyebrow-light">Wellness</span>
+                        <h2 class="display-heading fs-1">A slower rhythm below the city</h2>
+                    </div>
+                </div>
+                <div class="row g-0 border-top border-bottom" style="border-color: var(--mist) !important;">
+                    <div class="col-md-3">
+                        <div class="wellness-card">
+                            <!-- svg icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"
+                                style="width: 3rem; height: auto;">
+                                <g fill="none" stroke="#B28A52" stroke-width="2">
+                                    <path d="M32 54c-9-12-8-23 0-34 8 11 9 22 0 34Z" />
+                                    <path
+                                        d="M31 51C18 49 12 41 12 29c12 1 20 8 19 22ZM33 51c13-2 19-10 19-22-12 1-20 8-19 22Z" />
+                                </g>
+                            </svg>
+                            <h4 class="font-serif fs-4 mb-2">Spa</h4>
+                            <p class="text-secondary fs-7 mb-3">Restorative treatments grounded in scent, warmth and
+                                touch.
+                            </p>
+                            <span class="text-muted fs-8">10:00–22:00</span>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="wellness-card">
+                            <!-- svg icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"
+                                style="width: 3rem; height: auto;">
+                                <g fill="none" stroke="#B28A52" stroke-width="2">
+                                    <path
+                                        d="M7 29c6 0 6 4 12 4s6-4 12-4 6 4 12 4 6-4 14-4M7 40c6 0 6 4 12 4s6-4 12-4 6 4 12 4 6-4 14-4" />
+                                    <path d="M20 25v-7c0-6 4-10 10-10M43 25v-7c0-6 4-10 10-10" />
+                                </g>
+                            </svg>
+                            <h4 class="font-serif fs-4 mb-2">Indoor Pool</h4>
+                            <p class="text-secondary fs-7 mb-3">A 20-metre pool with calm lighting and dedicated family
+                                hours.</p>
+                            <span class="text-muted fs-8">06:00–23:00</span>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="wellness-card">
+                            <!-- svg icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"
+                                style="width: 3rem; height: auto;">
+                                <g fill="none" stroke="#B28A52" stroke-width="2">
+                                    <path d="M18 20v24M46 20v24M12 25v14M52 25v14M18 32h28" />
+                                    <path d="M8 28v8M56 28v8" />
+                                </g>
+                            </svg>
+                            <h4 class="font-serif fs-4 mb-2">Fitness Studio</h4>
+                            <p class="text-secondary fs-7 mb-3">Natural light, thoughtful equipment and private sessions
+                                on
+                                request.</p>
+                            <span class="text-muted fs-8">OPEN 24 HOURS</span>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="wellness-card">
+                            <!-- svg icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"
+                                style="width: 3rem; height: auto;">
+                                <g fill="none" stroke="#B28A52" stroke-width="2">
+                                    <path d="m10 39 5-16h34l5 16v9H10zM18 23l5-8h18l5 8" />
+                                    <circle cx="19" cy="48" r="4" />
+                                    <circle cx="45" cy="48" r="4" />
+                                    <path d="M15 38h34" />
+                                </g>
+                            </svg>
+                            <h4 class="font-serif fs-4 mb-2">Private Transfers</h4>
+                            <p class="text-secondary fs-7 mb-3">Quiet airport and station journeys arranged by your
+                                hotel
+                                host.</p>
+                            <span class="text-muted fs-8">BY RESERVATION</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="shanghai" class="py-5 bg-porcelain">
+            <div class="container py-4">
+                <div
+                    class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-end mb-5">
+                    <div>
+                        <span class="eyebrow">Explore Shanghai</span>
+                        <h2 class="display-heading fs-1">The city, within easy reach</h2>
+                    </div>
+                    <p class="text-secondary fs-7 mb-0" style="max-width: 360px;">
+                        Walk the creek, follow the galleries or arrive at the riverfront before the city fully wakes.
+                    </p>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <div class="map-container img-placeholder">
+                            <img src="./media_files/maps/shanghai-neighbourhood-map.svg" alt="Shanghai Neighbourhood Map">
+                            <div class="map-pin" id="mapmark3" style="top: 15%;left: 12.96%;">3</div>
+                            <div class="map-pin" id="mapmark2" style="top: 37.4%;left: 43.83%;">2</div>
+                            <div class="map-pin bg-dark" id="mapmark4" style="top: 41%;left: 53%;">.</div>
+                            <div class="map-pin" id="mapmark1" style="top: 56%;left: 80.3%;">1</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="nearby-item d-flex gap-3 align-items-center" id="nearby-item-1">
+                            <div class="img-placeholder flex-shrink-0"
+                                style="width: 100px; height: 80px; background-image: url('./media_files/images/nearby-bund.webp');">
+                            </div>
+                            <div>
+                                <span class="text-muted fs-8">01 · BY CAR 12 MIN</span>
+                                <h4 class="font-serif fs-5 mb-1">The Bund</h4>
+                                <p class="text-secondary fs-7 mb-0">Historic waterfront architecture and expansive
+                                    Huangpu
+                                    River views.</p>
+                            </div>
+                        </div>
+                        <div class="nearby-item d-flex gap-3 align-items-center" id="nearby-item-2">
+                            <div class="img-placeholder flex-shrink-0"
+                                style="width: 100px; height: 80px; background-image: url('./media_files/images/nearby-suzhou-creek.webp');">
+                            </div>
+                            <div>
+                                <span class="text-muted fs-8">02 · ON FOOT 4 MIN</span>
+                                <h4 class="font-serif fs-5 mb-1">Suzhou Creek Walk</h4>
+                                <p class="text-secondary fs-7 mb-0">A relaxed riverside route connecting restored warehouses and new public spaces.</p>
+                            </div>
+                        </div>
+
+                        <div class="nearby-item d-flex gap-3 align-items-center" id="nearby-item-3">
+                            <div class="img-placeholder flex-shrink-0"
+                                style="width: 100px; height: 80px; background-image: url('./media_files/images/nearby-m50.webp');">
+                            </div>
+                            <div>
+                                <span class="text-muted fs-8">03 · BY CAR 9 MIN</span>
+                                <h4 class="font-serif fs-5 mb-1">M50 Art District</h4>
+                                <p class="text-secondary fs-7 mb-0">Independent galleries and studios in a converted
+                                    industrial neighbourhood.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="row g-5 mb-5">
+                <!-- Address & Contact -->
+                <div class="col-lg-4">
+                    <div class="navbar-brand-title mb-3">
+                        <img src="./media_files/brand/su-hotel-logo-light.svg" alt="Sù Hotel Logo"
+                            style="height: 46px;">
+                    </div>
+                    <p class="text-white-50 fs-7 mb-3">
+                        88 North Suzhou Road<br>
+                        Shanghai 200085, China
+                    </p>
+                    <p class="text-white-50 fs-7 mb-0">
+                        +86 21 6888 8800<br>
+                        stay@thesuhotel.example
+                    </p>
+                </div>
+
+                <!-- Footer Nav -->
+                <div class="col-lg-4">
+                    <div class="d-flex flex-column gap-2">
+                        <a href="#hotel" class="text-white-50 text-decoration-none fs-7">Hotel</a>
+                        <a href="#rooms" class="text-white-50 text-decoration-none fs-7">Rooms</a>
+                        <a href="#dining" class="text-white-50 text-decoration-none fs-7">Dining</a>
+                        <a href="#wellness" class="text-white-50 text-decoration-none fs-7">Wellness</a>
+                        <a href="#shanghai" class="text-white-50 text-decoration-none fs-7">Shanghai</a>
+                    </div>
+                </div>
+
+                <!-- Newsletter Sign-up -->
+                <div class="col-lg-4">
+                    <span class="eyebrow eyebrow-light">Letters From Shanghai</span>
+                    <h3 class="display-heading fs-3 mb-4">Stay close to the story</h3>
+                    <div class="position-relative">
+                        <input type="email" class="form-control footer-input" placeholder="Email address">
+                        <button type="submit" class="btn text-white position-absolute end-0 top-0"
+                            aria-label="Subscribe to newsletter">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"
+                                style="width: 1.2rem; height: auto; margin-left: 0.3rem;">
+                                <path d="M6 16h19M18 9l7 7-7 7" fill="none" stroke="white" stroke-width="1.8" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-top pt-4 d-flex flex-column flex-md-row justify-content-between align-items-center fs-8 text-white-50"
+                style="border-color: rgba(255,255,255,0.1) !important;">
+                <div>© 2026 The Sù Hotel Shanghai</div>
+                <div class="d-flex gap-4 mt-3 mt-md-0">
+                    <span>WeChat</span>
+                    <span>Instagram</span>
+                    <span>Little Red Book</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- OFFCANVAS -->
+    <div class="offcanvas offcanvas-end offcanvas-booking" tabindex="-1" id="bookingDrawer"
+        aria-labelledby="bookingDrawerLabel">
+        <div class="offcanvas-header p-4 pb-0">
+            <div>
+                <span class="eyebrow">Stay Enquiry</span>
+                <h3 id="bookingDrawerLabel" class="display-heading fs-2">
+                    Plan your time at The Sù
+                </h3>
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body p-4">
+            <p class="text-secondary fs-7 mb-4">
+                Share the shape of your stay. No payment is taken.
+            </p>
+
+            <form>
+                <div class="row g-3 mb-3">
+                    <div class="col-6">
+                        <label for="checkIn" class="form-label-custom">Check-In Date</label>
+                        <input id="checkIn" type="date" class="form-control form-control-custom">
+                    </div>
+                    <div class="col-6">
+                        <label class="form-label-custom">Check-Out Date</label>
+                        <input type="date" class="form-control form-control-custom">
+                    </div>
+                </div>
+
+                <div class="row g-3 mb-3">
+                    <div class="col-6">
+                        <label class="form-label-custom">Guests</label>
+                        <select class="form-select form-select-custom">
+                            <option selected>Select</option>
+                            <option value="1">1 Guest</option>
+                            <option value="2">2 Guests</option>
+                            <option value="3">3 Guests</option>
+                        </select>
+                    </div>
+                    <div class="col-6">
+                        <label class="form-label-custom">Room Type</label>
+                        <select class="form-select form-select-custom">
+                            <option selected>Select a room</option>
+                            <option>Deluxe River Room</option>
+                            <option>Art Deco King Room</option>
+                            <option>Suzhou Suite</option>
+                            <option>Bund Signature Suite</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label-custom">Full Name</label>
+                    <input type="text" class="form-control form-control-custom">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label-custom">Email Address</label>
+                    <input type="email" class="form-control form-control-custom">
+                </div>
+
+                <div class="mb-4">
+                    <label class="form-label-custom">Special Requests <span
+                            class="text-muted fw-normal">Optional</span></label>
+                    <textarea class="form-control form-control-custom" rows="3"></textarea>
+                </div>
+
+                <button type="button" class="btn btn-ink w-100">Submit Enquiry</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- MOBILE NAVIGATION -->
+    <div class="offcanvas offcanvas-end offcanvas-mobile-menu" tabindex="-1" id="mobileMenu">
+        <div class="offcanvas-header p-4">
+            <button type="button" class="btn-close ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body p-4 d-flex flex-column justify-content-between">
+            <div class="mt-4">
+                <a href="#hotel" class="mobile-nav-link" data-bs-dismiss="offcanvas">Hotel</a>
+                <a href="#rooms" class="mobile-nav-link" data-bs-dismiss="offcanvas">Rooms</a>
+                <a href="#dining" class="mobile-nav-link" data-bs-dismiss="offcanvas">Dining</a>
+                <a href="#wellness" class="mobile-nav-link" data-bs-dismiss="offcanvas">Wellness</a>
+                <a href="#shanghai" class="mobile-nav-link" data-bs-dismiss="offcanvas">Shanghai</a>
+            </div>
+
+            <button class="btn btn-ink w-100 py-3" data-bs-toggle="offcanvas" data-bs-target="#bookingDrawer">
+                Book Your Stay
+            </button>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="./src/bootstrap/bootstrap.bundle.min.js"></script>
+
+    <!-- Interactive Room Switcher Script -->
+    <script src="./src/main.js"></script>
+</body>
+</html>
